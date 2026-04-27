@@ -94,14 +94,6 @@ def status():
         'message': 'API fungerer normalt'
     })
 
-@app.errorhandler(404)
-def not_found(error):
-    """Håndter 404 fejl"""
-    return jsonify({
-        'error': 'Endpoint ikke fundet',
-        'status': 'error'
-    }), 404
-
 @app.errorhandler(500)
 def internal_error(error):
     """Håndter 500 fejl"""
