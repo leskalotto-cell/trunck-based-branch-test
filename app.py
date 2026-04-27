@@ -117,3 +117,4 @@ if __name__ == '__main__':
         port=5000,
         debug=True  # Debug mode - deaktivér i produktion
     )
+print("🚀 Flask API starter på http://127.0.0.1:5000")
