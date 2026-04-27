@@ -102,14 +102,6 @@ def not_found(error):
         'status': 'error'
     }), 404
 
-@app.errorhandler(500)
-def internal_error(error):
-    """Håndter 500 fejl"""
-    return jsonify({
-        'error': 'Intern server fejl',
-        'status': 'error'
-    }), 500
-
 if __name__ == '__main__':
     # Start Flask serveren
     app.run(
